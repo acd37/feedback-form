@@ -8,7 +8,7 @@
 body {
 	background: #f4f4f4;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #333;
+	color: rgb(37, 56, 88) !important;
 	line-height: 1.6;
 }
 
@@ -19,14 +19,6 @@ body {
 	padding: 0 2rem;
 }
 
-h1 {
-	color: #777;
-	margin-top: 15px;
-}
-
-h3 {
-	margin-bottom: 10px;
-}
 
 img {
 	width: 100%;
@@ -40,33 +32,22 @@ img {
 }
 
 .logo {
-	width: 300px;
+	width: 150px;
 	display: block;
 	margin: auto;
 }
 
-.form-group {
-	margin: 1rem 0;
-}
+.header {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 
-input[type='text'],
-select,
-textarea {
-	display: block;
-	width: 100%;
-	padding: 0.4rem;
-	font-size: 1.2rem;
-	border: 1px solid #ccc;
 }
 
 .btn {
-	display: block;
-	width: 100%;
-	background: #333;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	margin-top: 1rem;
+	background-color: rgb(240,133,130) !important;
+	margin-top: 20px !important;
+	color: #fff !important;
 }
