@@ -1,4 +1,4 @@
-# Chatrr
+# Flask-Feedback
 https://secure-fortress-47817.herokuapp.com/
 
 ## Contributors
