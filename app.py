@@ -1,17 +1,22 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from send_mail import send_mail
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
+
 
 ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/feedback'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DEVELOPMENT_DATABASE')
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://lrtaheehcnrnra:bd71e9c9745345892f0421c65a8e99232d669f4e48bd4817493c09742fabb1c8@ec2-54-243-208-234.compute-1.amazonaws.com:5432/d9rob59nq9g6co'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('PRODUCTION_DATABASE')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
