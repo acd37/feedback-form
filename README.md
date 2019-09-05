@@ -1,9 +1,13 @@
 # Flask-Feedback
-https://secure-fortress-47817.herokuapp.com/
+https://acd37-peachflame-feedback.herokuapp.com/
+
+This is a simple proof of concept application built using Python and Flask. A simple feedback form that takes in a user's submission, logs it to the database and emails the feedback to the company (mocked using MailTrap).
+
+New technologies for me in this application were MailTrap, Semantic-UI and Flask.
+
 
 ## Contributors
 @acd37
-
 
 ## Technology
 * Python, Flask, PostgreSql, MailTrap, Semantic-UI
