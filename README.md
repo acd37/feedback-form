@@ -1,4 +1,4 @@
-# Flask-Feedback
+# Peachflame Feedback Form
 https://acd37-peachflame-feedback.herokuapp.com/
 
 This is a simple proof of concept application built using Python and Flask. A simple feedback form that takes in a user's submission, logs it to the database and emails the feedback to the company (mocked using MailTrap).
